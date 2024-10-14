@@ -22,7 +22,7 @@ class SplashScreen extends StatelessWidget {
 
           Spacer(),
           Text("Developed By\nKag)2" ,textAlign: TextAlign.center ,style: TextStyle(fontSize: 18 , fontWeight: FontWeight.bold),),
-          SizedBox(height: 20,),
+          SizedBox(height: 22,),
         ],
       )),
     );
