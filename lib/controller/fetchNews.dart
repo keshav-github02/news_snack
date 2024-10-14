@@ -54,7 +54,7 @@ class FetchNews{
   ];
 
 
-  static fetchNews() async{
+  static Future<NewsArt> fetchNews() async{
     final _random=new Random();
     var sourceID=sourcesId[_random.nextInt(sourcesId.length)];
 
@@ -69,7 +69,7 @@ class FetchNews{
     var myArticle=articles[_random.nextInt(articles.length)];
     print(myArticle);
     print("*********************************************************");
-    NewsArt.fromAPItoApp(myArticle);
+    return NewsArt.fromAPItoApp(myArticle);
     //print(body_data);
   }
 }
